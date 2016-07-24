@@ -10,7 +10,7 @@ import UIKit
 
 class Profile: UITableViewController {
     var contact = ["","Email","Phone","Website","Github",""]
-    var detail = ["","ab","cd","ge","xy",""]
+    var detail = ["","thucnhi2411@gmail.com","updating","thucnhi2411.github.io","thucnhi2411",""]
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -21,18 +21,24 @@ class Profile: UITableViewController {
         var cell : UITableViewCell
         if ( indexPath.row == 0 ) {
             cell = tableView.dequeueReusableCellWithIdentifier("about", forIndexPath: indexPath)
-            tableView.rowHeight = 400.0
             
         }
         else {
             cell = tableView.dequeueReusableCellWithIdentifier("contact", forIndexPath: indexPath)
             cell.textLabel!.text = contact[indexPath.row]
-            cell.detailTextLabel?.text = detail[indexPath.row]
-            tableView.rowHeight = 44.0
+            cell.detailTextLabel!.text = detail[indexPath.row]
             
         }
         return cell
         
+    }
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if (indexPath.row == 0) {
+            return 400.0
+        }
+        else {
+            return 44.0
+        }
     }
     override func viewDidLoad() {
         print("hi")

@@ -69,13 +69,30 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="44" selectionStyle="none" indentationWidth="10" reuseIdentifier="contact" rowHeight="44" id="w7Y-X7-0Cc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="44" selectionStyle="none" indentationWidth="10" reuseIdentifier="contact" textLabel="OTE-Kd-j8p" detailTextLabel="0QM-tw-sUB" rowHeight="44" style="IBUITableViewCellStyleValue1" id="w7Y-X7-0Cc">
                                 <rect key="frame" x="0.0" y="472" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w7Y-X7-0Cc" id="wEL-wO-eNH">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OTE-Kd-j8p">
+                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0QM-tw-sUB">
+                                            <rect key="frame" x="543" y="12" width="42" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -101,7 +118,7 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
                     </tabBar>
                     <connections>
                         <segue destination="IpQ-ex-EO0" kind="relationship" relationship="viewControllers" id="iSW-Ou-5tT"/>
-                        <segue destination="Nl6-f7-br5" kind="relationship" relationship="viewControllers" id="bL1-gj-oAH"/>
+                        <segue destination="Nxb-Jl-oDw" kind="relationship" relationship="viewControllers" id="Gt0-kv-rp4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -109,53 +126,76 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
             <point key="canvasLocation" x="-78" y="-2"/>
         </scene>
         <!--Education-->
-        <scene sceneID="tXV-Qm-5de">
+        <scene sceneID="U2i-PY-9tm">
             <objects>
-                <tableViewController id="Nl6-f7-br5" customClass="Education" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="QaZ-ZM-ANe">
+                <tableViewController title="Education" id="Nxb-Jl-oDw" customClass="Education" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="zms-Za-SdS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Q3A-qz-49K">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EduViewCell" rowHeight="100" id="6CF-9D-aAt" customClass="EduViewCell" customModule="AboutMe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q3A-qz-49K" id="cgX-dJ-2Jw">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="6CF-9D-aAt" id="Z59-cJ-lQJ">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyO-5k-Ieb">
-                                            <rect key="frame" x="8" y="0.0" width="91" height="91"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Atj-Nm-Abo">
+                                            <rect key="frame" x="8" y="5" width="90" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="90" id="5qE-0x-GLS"/>
+                                                <constraint firstAttribute="width" constant="90" id="LAP-IM-ZgM"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWu-iY-DjL">
-                                            <rect key="frame" x="107" y="8" width="485" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVe-WH-u9u">
+                                            <rect key="frame" x="106" y="8" width="476" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cyi-Ux-dt9">
-                                            <rect key="frame" x="107" y="30" width="485" height="61"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Description" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jo7-oA-LTu">
+                                            <rect key="frame" x="101" y="37" width="486" height="54"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="oWu-iY-DjL" secondAttribute="trailing" id="Pyq-vh-BKZ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Atj-Nm-Abo" secondAttribute="bottom" constant="-8" id="6Pa-SI-dbV"/>
+                                        <constraint firstItem="Jo7-oA-LTu" firstAttribute="leading" secondItem="Z59-cJ-lQJ" secondAttribute="leadingMargin" constant="98" id="a8O-tz-JJO"/>
+                                        <constraint firstItem="Atj-Nm-Abo" firstAttribute="top" secondItem="Z59-cJ-lQJ" secondAttribute="topMargin" constant="-9" id="hZo-ru-4LQ"/>
+                                        <constraint firstItem="Atj-Nm-Abo" firstAttribute="top" secondItem="Z59-cJ-lQJ" secondAttribute="topMargin" constant="1" id="kBs-tY-X0T"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="Atj-Nm-Abo" secondAttribute="leading" id="lwI-Va-t8H"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Atj-Nm-Abo" secondAttribute="bottom" constant="1" id="wct-pQ-VCT"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="Atj-Nm-Abo" secondAttribute="leading" id="zLP-kp-ub8"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="6Pa-SI-dbV"/>
+                                            <exclude reference="hZo-ru-4LQ"/>
+                                            <exclude reference="lwI-Va-t8H"/>
+                                            <exclude reference="a8O-tz-JJO"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descCustomized" destination="Jo7-oA-LTu" id="mpX-yR-b1F"/>
+                                    <outlet property="imageCustomized" destination="Atj-Nm-Abo" id="8Wk-YN-1Fa"/>
+                                    <outlet property="labelCustomized" destination="tVe-WH-u9u" id="rs4-E9-hCz"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="Nl6-f7-br5" id="Jy3-8A-Ygt"/>
-                            <outlet property="delegate" destination="Nl6-f7-br5" id="gYU-od-jHt"/>
+                            <outlet property="dataSource" destination="Nxb-Jl-oDw" id="ltF-lu-Z9i"/>
+                            <outlet property="delegate" destination="Nxb-Jl-oDw" id="rqm-oE-G8f"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Education" image="education" id="ugd-Bv-iWr"/>
+                    <tabBarItem key="tabBarItem" title="Education" image="education" id="5wf-Gi-EMW"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SWx-Ea-qqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vhx-IF-Db0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="734" y="-681"/>
+            <point key="canvasLocation" x="566" y="-665"/>
         </scene>
         <!--Awards-->
         <scene sceneID="4S8-Cq-WXr">
