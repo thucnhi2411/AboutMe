@@ -45,9 +45,13 @@ class Profile: UITableViewController {
     }
 	
 	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-		if contact[indexPath.row] == "Website" {
-			print("web")
+		let title = contact[indexPath.row]
+		if title == "Website" {
 			let url = NSURL( string: detail[indexPath.row] )
+			UIApplication.sharedApplication().openURL( url! )
+		}
+		else if title == "Email" {
+			let url = NSURL( string: "mailto:thucnhi2411@gmail.com" )
 			UIApplication.sharedApplication().openURL( url! )
 		}
 	}
