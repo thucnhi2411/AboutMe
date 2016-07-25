@@ -29,8 +29,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="399"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ava" translatesAutoresizingMaskIntoConstraints="NO" id="blc-xj-P3M">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ava" translatesAutoresizingMaskIntoConstraints="NO" id="blc-xj-P3M">
                                             <rect key="frame" x="235" y="54" width="130" height="129"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="130" id="Spc-Uk-1mc"/>
+                                                <constraint firstAttribute="height" constant="129" id="aGW-Sd-ard"/>
+                                            </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxx-eU-SOs">
                                             <rect key="frame" x="8" y="13" width="584" height="33"/>
@@ -50,11 +54,11 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="fxx-eU-SOs" firstAttribute="top" secondItem="ljX-JL-mbN" secondAttribute="topMargin" constant="5" id="3e0-ac-207"/>
-                                        <constraint firstItem="blc-xj-P3M" firstAttribute="centerX" secondItem="ljX-JL-mbN" secondAttribute="centerX" id="4iQ-f3-2qv"/>
+                                        <constraint firstItem="blc-xj-P3M" firstAttribute="top" secondItem="fxx-eU-SOs" secondAttribute="bottom" constant="8" symbolic="YES" id="6Rd-gU-nQ1"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="fxx-eU-SOs" secondAttribute="leading" id="F1H-nF-grL"/>
                                         <constraint firstItem="ffH-5t-KJN" firstAttribute="top" secondItem="ljX-JL-mbN" secondAttribute="topMargin" constant="228" id="GZp-eT-GIT"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="ffH-5t-KJN" secondAttribute="bottom" constant="2" id="NIA-qW-Ehc"/>
-                                        <constraint firstItem="blc-xj-P3M" firstAttribute="top" secondItem="ljX-JL-mbN" secondAttribute="topMargin" constant="46" id="Rfv-eO-u4Q"/>
+                                        <constraint firstItem="blc-xj-P3M" firstAttribute="centerX" secondItem="fxx-eU-SOs" secondAttribute="centerX" id="WgW-y3-xVM"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="fxx-eU-SOs" secondAttribute="trailing" id="XqV-CU-ZFB"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="ffH-5t-KJN" secondAttribute="trailing" id="adr-rx-uKK"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="ffH-5t-KJN" secondAttribute="leading" id="dap-fx-1MQ"/>

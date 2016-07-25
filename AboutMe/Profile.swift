@@ -10,7 +10,7 @@ import UIKit
 
 class Profile: UITableViewController {
     var contact = ["","Email","Phone","Website","Github",""]
-    var detail = ["","thucnhi2411@gmail.com","updating","thucnhi2411.github.io","thucnhi2411",""]
+    var detail = ["","thucnhi2411@gmail.com","updating","http://thucnhi2411.github.io","thucnhi2411",""]
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -27,7 +27,10 @@ class Profile: UITableViewController {
             cell = tableView.dequeueReusableCellWithIdentifier("contact", forIndexPath: indexPath)
             cell.textLabel!.text = contact[indexPath.row]
             cell.detailTextLabel!.text = detail[indexPath.row]
-            
+            // mark hyperlink
+			if contact[indexPath.row] == "Website" {
+				cell.detailTextLabel!.textColor = UIColor.blueColor()
+			}
         }
         return cell
         
@@ -40,8 +43,12 @@ class Profile: UITableViewController {
             return 44.0
         }
     }
-    override func viewDidLoad() {
-        print("hi")
-        super.viewDidLoad()
-    }
+	
+	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+		if contact[indexPath.row] == "Website" {
+			print("web")
+			let url = NSURL( string: detail[indexPath.row] )
+			UIApplication.sharedApplication().openURL( url! )
+		}
+	}
 }
