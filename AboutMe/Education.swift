@@ -40,6 +40,12 @@ class Education: UITableViewController {
         }
         return cell
     }
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.section == 0 && indexPath.row == 1 {
+            performSegueWithIdentifier("Show Awards", sender: self)
+        }
+    }
+    
     override func viewDidLoad() {
         print("hi")
         super.viewDidLoad()

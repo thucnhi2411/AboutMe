@@ -11,6 +11,9 @@
 		046736D61D449EE400710E12 /* EduViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046736D51D449EE400710E12 /* EduViewCell.swift */; };
 		046736D81D44A0A900710E12 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046736D71D44A0A900710E12 /* Education.swift */; };
 		04ABFE521D42F1CB006909BE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ABFE511D42F1CB006909BE /* Profile.swift */; };
+		04D55EE31D45BE100032341D /* Awards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D55EE21D45BE100032341D /* Awards.swift */; };
+		04D55EE51D45C4350032341D /* AwardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D55EE41D45C4350032341D /* AwardsCell.swift */; };
+		04D55EE71D45C6210032341D /* AwardsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D55EE61D45C6210032341D /* AwardsViewCell.swift */; };
 		04F5E2BD1D41DDD400AA6066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5E2BC1D41DDD400AA6066 /* AppDelegate.swift */; };
 		04F5E2C41D41DDD400AA6066 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F5E2C21D41DDD400AA6066 /* Main.storyboard */; };
 		04F5E2C61D41DDD400AA6066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F5E2C51D41DDD400AA6066 /* Assets.xcassets */; };
@@ -41,6 +44,9 @@
 		046736D51D449EE400710E12 /* EduViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EduViewCell.swift; sourceTree = "<group>"; };
 		046736D71D44A0A900710E12 /* Education.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
 		04ABFE511D42F1CB006909BE /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		04D55EE21D45BE100032341D /* Awards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Awards.swift; sourceTree = "<group>"; };
+		04D55EE41D45C4350032341D /* AwardsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwardsCell.swift; sourceTree = "<group>"; };
+		04D55EE61D45C6210032341D /* AwardsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwardsViewCell.swift; sourceTree = "<group>"; };
 		04F5E2B91D41DDD400AA6066 /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F5E2BC1D41DDD400AA6066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F5E2C31D41DDD400AA6066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,10 +111,13 @@
 			children = (
 				04F5E2BC1D41DDD400AA6066 /* AppDelegate.swift */,
 				04F5E2C21D41DDD400AA6066 /* Main.storyboard */,
+				04D55EE21D45BE100032341D /* Awards.swift */,
 				046736D71D44A0A900710E12 /* Education.swift */,
 				04ABFE511D42F1CB006909BE /* Profile.swift */,
 				046736D31D449CFF00710E12 /* EduCell.swift */,
+				04D55EE41D45C4350032341D /* AwardsCell.swift */,
 				046736D51D449EE400710E12 /* EduViewCell.swift */,
+				04D55EE61D45C6210032341D /* AwardsViewCell.swift */,
 				04F5E2C51D41DDD400AA6066 /* Assets.xcassets */,
 				04F5E2C71D41DDD400AA6066 /* LaunchScreen.storyboard */,
 				04F5E2CA1D41DDD400AA6066 /* Info.plist */,
@@ -266,10 +275,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				046736D41D449CFF00710E12 /* EduCell.swift in Sources */,
+				04D55EE31D45BE100032341D /* Awards.swift in Sources */,
 				046736D61D449EE400710E12 /* EduViewCell.swift in Sources */,
 				046736D81D44A0A900710E12 /* Education.swift in Sources */,
+				04D55EE71D45C6210032341D /* AwardsViewCell.swift in Sources */,
 				04F5E2BD1D41DDD400AA6066 /* AppDelegate.swift in Sources */,
 				04ABFE521D42F1CB006909BE /* Profile.swift in Sources */,
+				04D55EE51D45C4350032341D /* AwardsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AboutMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.thucnhi2411.github.AboutMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AboutMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.thucnhi2411.github.AboutMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";

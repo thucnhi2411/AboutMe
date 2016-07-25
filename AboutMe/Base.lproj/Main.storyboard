@@ -108,7 +108,7 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1f-EU-IEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-78" y="-665"/>
+            <point key="canvasLocation" x="46" y="-961"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -122,12 +122,74 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
                     </tabBar>
                     <connections>
                         <segue destination="IpQ-ex-EO0" kind="relationship" relationship="viewControllers" id="iSW-Ou-5tT"/>
-                        <segue destination="Nxb-Jl-oDw" kind="relationship" relationship="viewControllers" id="Gt0-kv-rp4"/>
+                        <segue destination="l2t-qL-2Jp" kind="relationship" relationship="viewControllers" id="Gt0-kv-rp4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-78" y="-2"/>
+            <point key="canvasLocation" x="-558" y="34"/>
+        </scene>
+        <!--Awards-->
+        <scene sceneID="mos-0y-Qon">
+            <objects>
+                <tableViewController id="SrN-Od-qib" customClass="Awards" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="QmS-JL-AfO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="awardcell" id="P8Y-s7-mDb" customClass="AwardsViewCell" customModule="AboutMe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P8Y-s7-mDb" id="vVa-xT-qh3">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="119"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBI-cy-D4e">
+                                            <rect key="frame" x="8" y="0.0" width="584" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Desc" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6W-pP-M4S">
+                                            <rect key="frame" x="8" y="51" width="584" height="60"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgR-NW-WSf">
+                                            <rect key="frame" x="23" y="29" width="569" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="m6W-pP-M4S" secondAttribute="bottom" id="4B8-gu-qad"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="m6W-pP-M4S" secondAttribute="trailing" id="aNm-CC-4tW"/>
+                                        <constraint firstItem="ZgR-NW-WSf" firstAttribute="leading" secondItem="vVa-xT-qh3" secondAttribute="leadingMargin" constant="15" id="eb1-2b-HaB"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="m6W-pP-M4S" secondAttribute="leading" id="gZv-qV-3hg"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="kBI-cy-D4e" secondAttribute="trailing" id="pVj-e3-glQ"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="kBI-cy-D4e" secondAttribute="leading" id="tVU-1f-z0D"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ZgR-NW-WSf" secondAttribute="trailing" id="yaZ-nV-npp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descAward" destination="m6W-pP-M4S" id="MPp-iN-oZd"/>
+                                    <outlet property="labelAward" destination="kBI-cy-D4e" id="MGa-yU-CpP"/>
+                                    <outlet property="yearAward" destination="ZgR-NW-WSf" id="tJ0-Pm-bOl"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SrN-Od-qib" id="E4T-fh-Aew"/>
+                            <outlet property="delegate" destination="SrN-Od-qib" id="R6x-wm-N46"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cT7-bn-zm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028" y="-665"/>
         </scene>
         <!--Education-->
         <scene sceneID="U2i-PY-9tm">
@@ -139,7 +201,7 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EduViewCell" rowHeight="100" id="6CF-9D-aAt" customClass="EduViewCell" customModule="AboutMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="100"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="6CF-9D-aAt" id="Z59-cJ-lQJ">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
@@ -195,11 +257,14 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
                             <outlet property="delegate" destination="Nxb-Jl-oDw" id="rqm-oE-G8f"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Education" image="education" id="5wf-Gi-EMW"/>
+                    <navigationItem key="navigationItem" id="Bm9-sE-dgB"/>
+                    <connections>
+                        <segue destination="SrN-Od-qib" kind="show" identifier="Show Awards" id="dBp-KL-fRo"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vhx-IF-Db0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="-665"/>
+            <point key="canvasLocation" x="1354" y="-659"/>
         </scene>
         <!--Awards-->
         <scene sceneID="4S8-Cq-WXr">
@@ -257,6 +322,25 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pn4-iS-YLD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="661"/>
+        </scene>
+        <!--Education-->
+        <scene sceneID="vEJ-dh-xTK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l2t-qL-2Jp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Education" image="education" id="5wf-Gi-EMW"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ffV-of-03m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Nxb-Jl-oDw" kind="relationship" relationship="rootViewController" id="G2G-lf-XaA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSe-Rf-h83" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688" y="-659"/>
         </scene>
     </scenes>
     <resources>
