@@ -283,6 +283,9 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="3Oc-UY-fNz" kind="show" id="wnB-5y-jdY"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -296,33 +299,34 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
             </objects>
             <point key="canvasLocation" x="976" y="26"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="Kzc-2n-SCN">
+        <!--Text-->
+        <scene sceneID="SCb-iW-oYy">
             <objects>
-                <tableViewController id="Tys-uL-ns4" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aR8-oq-hq5">
+                <viewController id="3Oc-UY-fNz" customClass="text" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k2l-YU-Di9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eky-l4-6lt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3MZ-Je-zmv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="array" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ww7-sD-Ev2">
+                                <rect key="frame" x="180" y="186" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Experience" id="hqp-RO-zhc">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hqp-RO-zhc" id="zkf-qc-qpU">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Tys-uL-ns4" id="frV-qY-IZC"/>
-                            <outlet property="delegate" destination="Tys-uL-ns4" id="1Se-ra-6ob"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wka-de-l4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </view>
+                    <connections>
+                        <outlet property="textarray" destination="Ww7-sD-Ev2" id="I8s-hr-adu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xY3-sZ-01Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1691" y="26"/>
+            <point key="canvasLocation" x="1605" y="10"/>
         </scene>
         <!--Skills-->
         <scene sceneID="CvY-do-Cte">
