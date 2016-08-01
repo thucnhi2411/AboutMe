@@ -11,7 +11,7 @@ import UIKit
 class text: UIViewController {
     @IBOutlet weak var textarray: UITextView!
     var arr = ["ab", "cd", "ef", "gc"]
-    
+     var i: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,11 +21,18 @@ class text: UIViewController {
         self.textarray.addGestureRecognizer(singleTap)
         self.textarray.userInteractionEnabled = true
         
+        
     }
     
-    func myUIImageViewTapped(recognizer: UITapGestureRecognizer) {
+    func myUITextViewTapped(recognizer: UITapGestureRecognizer) {
         if(recognizer.state == UIGestureRecognizerState.Ended){
-            print("myUIImageView has been tapped by the user.")
+            print("myUITextView has been tapped by the user.")
+            if i < arr.count {
+            textarray.text = arr[i]
+            i = i + 1
+            }
+           
+            
         }
     }
 

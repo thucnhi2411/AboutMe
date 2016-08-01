@@ -271,19 +271,45 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
         <scene sceneID="l10-jx-H5G">
             <objects>
                 <tableViewController title="Experience" id="2Jr-pQ-vjw" customClass="Experience" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="RZS-Ub-kuU">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="RZS-Ub-kuU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Category" id="3BH-PV-UMe">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Category" id="3BH-PV-UMe" customClass="ExpViewCell" customModule="AboutMe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3BH-PV-UMe" id="zb0-Fr-82y">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vYj-YT-vbz">
+                                            <rect key="frame" x="8" y="1" width="90" height="90"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVe-Nn-c8z">
+                                            <rect key="frame" x="106" y="8" width="486" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Desc" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aa5-tn-brw">
+                                            <rect key="frame" x="100" y="32" width="492" height="59"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="PVe-Nn-c8z" secondAttribute="trailing" id="JYG-EJ-qNW"/>
+                                        <constraint firstItem="vYj-YT-vbz" firstAttribute="top" secondItem="zb0-Fr-82y" secondAttribute="topMargin" id="Kin-yX-atX"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="vYj-YT-vbz" secondAttribute="leading" id="Q2U-y5-T7F"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="vYj-YT-vbz" secondAttribute="bottom" id="dDD-Wj-fTp"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="descExp" destination="Aa5-tn-brw" id="6U7-ly-t1L"/>
+                                    <outlet property="imgExp" destination="vYj-YT-vbz" id="eLR-WJ-4LF"/>
+                                    <outlet property="labelExp" destination="PVe-Nn-c8z" id="DUh-bl-UKS"/>
                                     <segue destination="3Oc-UY-fNz" kind="show" id="wnB-5y-jdY"/>
                                 </connections>
                             </tableViewCell>
@@ -311,7 +337,7 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="array" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ww7-sD-Ev2">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="array" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ww7-sD-Ev2">
                                 <rect key="frame" x="180" y="186" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
