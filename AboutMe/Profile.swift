@@ -18,26 +18,25 @@ class Profile: UITableViewController {
         return 6
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell : UITableViewCell
         if ( indexPath.row == 0 ) {
-            cell = tableView.dequeueReusableCellWithIdentifier("about", forIndexPath: indexPath) as! ProfileCell
+			let cell = tableView.dequeueReusableCellWithIdentifier("about", forIndexPath: indexPath) as! ProfileCell
             let singleTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "myUITextViewTapped:")
             singleTap.numberOfTapsRequired = 1
             singleTap.numberOfTouchesRequired = 1
             cell.desc.addGestureRecognizer(singleTap)
             cell.desc.userInteractionEnabled = true
-            
+            return cell
         }
         else {
-            cell = tableView.dequeueReusableCellWithIdentifier("contact", forIndexPath: indexPath)
+            let cell = tableView.dequeueReusableCellWithIdentifier("contact", forIndexPath: indexPath)
             cell.textLabel!.text = contact[indexPath.row]
             cell.detailTextLabel!.text = detail[indexPath.row]
             // mark hyperlink
 			if contact[indexPath.row] == "Website" {
 				cell.detailTextLabel!.textColor = UIColor.blueColor()
 			}
+			return cell
         }
-        return cell
         
     }
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
