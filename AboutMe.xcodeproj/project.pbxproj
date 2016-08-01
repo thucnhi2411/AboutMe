@@ -15,6 +15,7 @@
 		046736D81D44A0A900710E12 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046736D71D44A0A900710E12 /* Education.swift */; };
 		047348C81D4617AD00860685 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047348C71D4617AD00860685 /* Experience.swift */; };
 		04ABFE521D42F1CB006909BE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ABFE511D42F1CB006909BE /* Profile.swift */; };
+		04B27B4D1D4F4F8B005C2AEE /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B27B4C1D4F4F8B005C2AEE /* Skills.swift */; };
 		04D55EE31D45BE100032341D /* Awards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D55EE21D45BE100032341D /* Awards.swift */; };
 		04D55EE51D45C4350032341D /* AwardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D55EE41D45C4350032341D /* AwardsCell.swift */; };
 		04D55EE71D45C6210032341D /* AwardsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D55EE61D45C6210032341D /* AwardsViewCell.swift */; };
@@ -52,6 +53,7 @@
 		046736D71D44A0A900710E12 /* Education.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
 		047348C71D4617AD00860685 /* Experience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		04ABFE511D42F1CB006909BE /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		04B27B4C1D4F4F8B005C2AEE /* Skills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
 		04D55EE21D45BE100032341D /* Awards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Awards.swift; sourceTree = "<group>"; };
 		04D55EE41D45C4350032341D /* AwardsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwardsCell.swift; sourceTree = "<group>"; };
 		04D55EE61D45C6210032341D /* AwardsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwardsViewCell.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				04F5E2BC1D41DDD400AA6066 /* AppDelegate.swift */,
 				04F5E2C21D41DDD400AA6066 /* Main.storyboard */,
+				04B27B4C1D4F4F8B005C2AEE /* Skills.swift */,
 				0414B53E1D4EF58D0060C348 /* text.swift */,
 				047348C71D4617AD00860685 /* Experience.swift */,
 				04D55EE21D45BE100032341D /* Awards.swift */,
@@ -223,6 +226,7 @@
 				TargetAttributes = {
 					04F5E2B81D41DDD400AA6066 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = JX8LDP3L4K;
 					};
 					04F5E2CE1D41DDD400AA6066 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -296,6 +300,7 @@
 				04F5E2BD1D41DDD400AA6066 /* AppDelegate.swift in Sources */,
 				0414B5431D4F14C90060C348 /* ExpViewCell.swift in Sources */,
 				04ABFE521D42F1CB006909BE /* Profile.swift in Sources */,
+				04B27B4D1D4F4F8B005C2AEE /* Skills.swift in Sources */,
 				0414B53F1D4EF58E0060C348 /* text.swift in Sources */,
 				04D55EE51D45C4350032341D /* AwardsCell.swift in Sources */,
 			);
@@ -439,11 +444,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AboutMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.thucnhi2411.github.AboutMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -451,11 +459,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AboutMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.thucnhi2411.github.AboutMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
