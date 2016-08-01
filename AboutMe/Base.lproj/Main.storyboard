@@ -123,6 +123,7 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
                     <connections>
                         <segue destination="IpQ-ex-EO0" kind="relationship" relationship="viewControllers" id="iSW-Ou-5tT"/>
                         <segue destination="l2t-qL-2Jp" kind="relationship" relationship="viewControllers" id="Gt0-kv-rp4"/>
+                        <segue destination="TF3-jv-Vjc" kind="relationship" relationship="viewControllers" id="O8m-8l-3bA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -266,24 +267,62 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
             </objects>
             <point key="canvasLocation" x="1354" y="-659"/>
         </scene>
-        <!--Awards-->
-        <scene sceneID="4S8-Cq-WXr">
+        <!--Experience-->
+        <scene sceneID="l10-jx-H5G">
             <objects>
-                <viewController title="Awards" id="1WE-G3-gUv" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4Ej-oY-vxj"/>
-                        <viewControllerLayoutGuide type="bottom" id="vAj-tr-T15"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9ek-hs-a8h">
+                <tableViewController title="Experience" id="2Jr-pQ-vjw" customClass="Experience" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="RZS-Ub-kuU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Awards" image="awards" id="rvt-3x-UMs"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A9C-Qc-DjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Category" id="3BH-PV-UMe">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3BH-PV-UMe" id="zb0-Fr-82y">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2Jr-pQ-vjw" id="4KX-RZ-D7W"/>
+                            <outlet property="delegate" destination="2Jr-pQ-vjw" id="qka-Av-UKx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Fht-sV-mnF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4K-R4-XXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="-1.9999999999999996"/>
+            <point key="canvasLocation" x="976" y="26"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Kzc-2n-SCN">
+            <objects>
+                <tableViewController id="Tys-uL-ns4" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aR8-oq-hq5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Experience" id="hqp-RO-zhc">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hqp-RO-zhc" id="zkf-qc-qpU">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Tys-uL-ns4" id="frV-qY-IZC"/>
+                            <outlet property="delegate" destination="Tys-uL-ns4" id="1Se-ra-6ob"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wka-de-l4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1691" y="26"/>
         </scene>
         <!--Skills-->
         <scene sceneID="CvY-do-Cte">
@@ -304,25 +343,6 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
             </objects>
             <point key="canvasLocation" x="-78" y="669"/>
         </scene>
-        <!--Experience-->
-        <scene sceneID="S2I-3S-hsg">
-            <objects>
-                <viewController title="Experience" id="ZHI-LY-AtK" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1iC-zj-ecB"/>
-                        <viewControllerLayoutGuide type="bottom" id="If9-Sm-N4B"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pvp-My-lZ9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Experience" image="experience" id="36y-DV-WVc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pn4-iS-YLD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="653" y="661"/>
-        </scene>
         <!--Education-->
         <scene sceneID="vEJ-dh-xTK">
             <objects>
@@ -342,10 +362,28 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
             </objects>
             <point key="canvasLocation" x="688" y="-659"/>
         </scene>
+        <!--Experience-->
+        <scene sceneID="FyW-6M-dH6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TF3-jv-Vjc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Experience" image="experience" id="5vB-t5-XJ1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C7J-Pc-rmA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2Jr-pQ-vjw" kind="relationship" relationship="rootViewController" id="2R7-FP-1TC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OaW-TZ-wX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327" y="26"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ava" width="250" height="250"/>
-        <image name="awards" width="25" height="25"/>
         <image name="education" width="25" height="25"/>
         <image name="experience" width="25" height="25"/>
         <image name="profile" width="25" height="25"/>
