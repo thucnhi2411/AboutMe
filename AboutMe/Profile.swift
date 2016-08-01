@@ -20,7 +20,7 @@ class Profile: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if ( indexPath.row == 0 ) {
 			let cell = tableView.dequeueReusableCellWithIdentifier("about", forIndexPath: indexPath) as! ProfileCell
-            let singleTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "myUITextViewTapped:")
+            let singleTap: UITapGestureRecognizer = UITapGestureRecognizer(target: cell, action: "myUITextViewTapped:")
             singleTap.numberOfTapsRequired = 1
             singleTap.numberOfTouchesRequired = 1
             cell.desc.addGestureRecognizer(singleTap)
@@ -41,7 +41,7 @@ class Profile: UITableViewController {
     }
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if (indexPath.row == 0) {
-            return 400.0
+            return 280.0
         }
         else {
             return 44.0

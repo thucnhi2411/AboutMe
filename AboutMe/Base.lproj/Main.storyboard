@@ -10,7 +10,7 @@
         <scene sceneID="L5c-Qv-pV7">
             <objects>
                 <tableViewController title="Profile" id="IpQ-ex-EO0" customClass="Profile" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="400" sectionHeaderHeight="28" sectionFooterHeight="28" id="bIv-Of-x5E">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="350" sectionHeaderHeight="28" sectionFooterHeight="28" id="bIv-Of-x5E">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -42,9 +42,9 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Tap to learn about me !" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffH-5t-KJN">
-                                            <rect key="frame" x="8" y="236" width="584" height="155"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14.5"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Tap to learn about me !" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffH-5t-KJN">
+                                            <rect key="frame" x="8" y="188" width="584" height="203"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13.5"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
@@ -52,7 +52,7 @@
                                         <constraint firstItem="fxx-eU-SOs" firstAttribute="top" secondItem="ljX-JL-mbN" secondAttribute="topMargin" constant="5" id="3e0-ac-207"/>
                                         <constraint firstItem="blc-xj-P3M" firstAttribute="top" secondItem="fxx-eU-SOs" secondAttribute="bottom" constant="8" symbolic="YES" id="6Rd-gU-nQ1"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="fxx-eU-SOs" secondAttribute="leading" id="F1H-nF-grL"/>
-                                        <constraint firstItem="ffH-5t-KJN" firstAttribute="top" secondItem="ljX-JL-mbN" secondAttribute="topMargin" constant="228" id="GZp-eT-GIT"/>
+                                        <constraint firstItem="ffH-5t-KJN" firstAttribute="top" secondItem="ljX-JL-mbN" secondAttribute="topMargin" constant="180" id="GZp-eT-GIT"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="ffH-5t-KJN" secondAttribute="bottom" constant="2" id="NIA-qW-Ehc"/>
                                         <constraint firstItem="blc-xj-P3M" firstAttribute="centerX" secondItem="fxx-eU-SOs" secondAttribute="centerX" id="WgW-y3-xVM"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="fxx-eU-SOs" secondAttribute="trailing" id="XqV-CU-ZFB"/>
