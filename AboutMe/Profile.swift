@@ -20,7 +20,12 @@ class Profile: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell : UITableViewCell
         if ( indexPath.row == 0 ) {
-            cell = tableView.dequeueReusableCellWithIdentifier("about", forIndexPath: indexPath)
+            cell = tableView.dequeueReusableCellWithIdentifier("about", forIndexPath: indexPath) as! ProfileCell
+            let singleTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "myUITextViewTapped:")
+            singleTap.numberOfTapsRequired = 1
+            singleTap.numberOfTouchesRequired = 1
+            cell.desc.addGestureRecognizer(singleTap)
+            cell.desc.userInteractionEnabled = true
             
         }
         else {

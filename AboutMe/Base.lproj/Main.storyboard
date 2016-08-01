@@ -22,7 +22,7 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="about" rowHeight="400" id="LPB-J6-gqE">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="about" rowHeight="400" id="LPB-J6-gqE" customClass="ProfileCell" customModule="AboutMe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="600" height="400"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="254" tableViewCell="LPB-J6-gqE" id="ljX-JL-mbN">
@@ -42,12 +42,8 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffH-5t-KJN">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Tap to learn about me !" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffH-5t-KJN">
                                             <rect key="frame" x="8" y="236" width="584" height="155"/>
-                                            <string key="text">My name is Thuc-Nhi. 
-Please feel free to call me Felicity.
-I am a freshman at Lafayette College and double major in Economics and Computer Science. I love playing the piano, baking, listening to music, traveling, working on do-it-yourself projects and meeting people.
-</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14.5"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
@@ -72,6 +68,9 @@ I am a freshman at Lafayette College and double major in Economics and Computer 
                                     </variation>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="desc" destination="ffH-5t-KJN" id="PKf-u2-gwa"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="44" selectionStyle="none" indentationWidth="10" reuseIdentifier="contact" textLabel="OTE-Kd-j8p" detailTextLabel="0QM-tw-sUB" rowHeight="44" style="IBUITableViewCellStyleValue1" id="w7Y-X7-0Cc">
                                 <rect key="frame" x="0.0" y="472" width="600" height="44"/>
