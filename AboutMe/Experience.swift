@@ -27,20 +27,22 @@ class Experience: UITableViewController {
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var expcell = tableView.dequeueReusableCellWithIdentifier("Category", forIndexPath: indexPath) as! ExpViewCell
-        let leader = experience.leader[indexPath.row]
-        let teacher = experience.teacher[indexPath.row]
-        let speaker = experience.speaker[indexPath.row]
-        if indexPath.row == 0 {
+       
+     
+                if indexPath.section == 0 {
+                let leader = experience.leader[indexPath.row]
                 expcell.labelExp.text = leader.label
                 expcell.descExp.text = leader.desc
                 expcell.timeExp.text = leader.time
         }
         else {
-            if indexPath.row == 1{
+            if indexPath.section == 1{
+                let teacher = experience.teacher[indexPath.row]
                 expcell.labelExp.text = teacher.label
                 expcell.descExp.text = teacher.desc
                 expcell.timeExp.text = teacher.time }
             else {
+                let speaker = experience.speaker[indexPath.row]
                 expcell.labelExp.text = speaker.label
                 expcell.descExp.text = speaker.desc
                 expcell.timeExp.text = speaker.time

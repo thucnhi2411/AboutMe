@@ -393,7 +393,6 @@
                                     <outlet property="descExp" destination="Aa5-tn-brw" id="6U7-ly-t1L"/>
                                     <outlet property="labelExp" destination="PVe-Nn-c8z" id="DUh-bl-UKS"/>
                                     <outlet property="timeExp" destination="vDq-4v-g0L" id="2Fn-8s-nYr"/>
-                                    <segue destination="3Oc-UY-fNz" kind="show" id="wnB-5y-jdY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -407,35 +406,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4K-R4-XXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="976" y="26"/>
-        </scene>
-        <!--Text-->
-        <scene sceneID="SCb-iW-oYy">
-            <objects>
-                <viewController id="3Oc-UY-fNz" customClass="text" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="k2l-YU-Di9"/>
-                        <viewControllerLayoutGuide type="bottom" id="Eky-l4-6lt"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3MZ-Je-zmv">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="array" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ww7-sD-Ev2">
-                                <rect key="frame" x="180" y="186" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="textarray" destination="Ww7-sD-Ev2" id="I8s-hr-adu"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xY3-sZ-01Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1605" y="10"/>
         </scene>
         <!--Education-->
         <scene sceneID="vEJ-dh-xTK">
