@@ -10,19 +10,45 @@ import UIKit
 
 class Experience: UITableViewController {
     let experience = ExpCell()
+    var category = ["Leader","Teacher/Mentor","Public Speaker"]
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return category.count
+    }
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return category[section]
     }
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        switch (category[section]) {
+            case "Leader": return 5
+            case "Teacher/Mentor": return 4
+            case "Public Speaker": return 2
+            default: return 1
+        }
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var expcell = tableView.dequeueReusableCellWithIdentifier("Category", forIndexPath: indexPath) as! ExpViewCell
-        let exp = experience.cell[indexPath.row]
-        let image = UIImage(named: exp.img)
-        expcell.labelExp.text = exp.label
-        expcell.descExp.text = exp.desc
-        expcell.imgExp.image = image
+        let leader = experience.leader[indexPath.row]
+        let teacher = experience.teacher[indexPath.row]
+        let speaker = experience.speaker[indexPath.row]
+        if indexPath.row == 0 {
+                expcell.labelExp.text = leader.label
+                expcell.descExp.text = leader.desc
+                expcell.timeExp.text = leader.time
+        }
+        else {
+            if indexPath.row == 1{
+                expcell.labelExp.text = teacher.label
+                expcell.descExp.text = teacher.desc
+                expcell.timeExp.text = teacher.time }
+            else {
+                expcell.labelExp.text = speaker.label
+                expcell.descExp.text = speaker.desc
+                expcell.timeExp.text = speaker.time
+            }
+        }
+        
+        
+    
         return expcell
     }
     

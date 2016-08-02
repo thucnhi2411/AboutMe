@@ -12,11 +12,12 @@ class ExpViewCell: UITableViewCell {
     
     @IBOutlet weak var descExp: UITextView!
     @IBOutlet weak var labelExp: UILabel!
-    @IBOutlet weak var imgExp: UIImageView!
     
+    @IBOutlet weak var timeExp: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         
+       
     }
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
