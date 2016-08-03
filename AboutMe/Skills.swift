@@ -49,5 +49,15 @@ class Skills: UITableViewController {
         return cell
         
     }
+    override func viewDidLoad() {
+        print("hi")
+        let backgroundImage = UIImage(named: "backgroundskill.png")
+        let imageView = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = imageView
+        imageView.contentMode = .ScaleAspectFill
+        
+        super.viewDidLoad()
+    }
+
 
 }

@@ -27,21 +27,56 @@ class Education: UITableViewController {
         let college = eduCell.college[indexPath.row]
         
         if indexPath.section == 0 {
-            let imageHS = UIImage(named: highschool.imageName)
-            cell.imageCustomized.image = imageHS
+            
             cell.labelCustomized.text = highschool.label
+            cell.labelCustomized.textAlignment = .Center
+            cell.labelCustomized.font = UIFont (name: "Hiragino Sans", size: 25)
+            cell.labelCustomized.textColor = UIColor.whiteColor()
             cell.descCustomized.text = highschool.desc
+            cell.descCustomized.textAlignment = .Center
+            cell.descCustomized.font = UIFont (name: "Hiragino Sans", size: 12)
+            cell.descCustomized.textColor = UIColor.whiteColor()
+            
+            
+            if indexPath.row == 0 {
+                let backgroundImage1 = UIImage(named: "edu1.png")
+                let imageView1 = UIImageView(image: backgroundImage1)
+                cell.backgroundView = imageView1
+                imageView1.contentMode = .ScaleAspectFill
+            }
+            else {
+                let backgroundImage2 = UIImage(named: "edu2.png")
+                let imageView2 = UIImageView(image: backgroundImage2)
+                cell.backgroundView = imageView2
+                imageView2.contentMode = .ScaleAspectFill
+            }
 			
-			if indexPath.row == 1 {
-				cell.accessoryType = UITableViewCellAccessoryType.DetailButton
-			}
         }
         else {
-            let imageC = UIImage(named: college.imageName)
-            cell.imageCustomized.image = imageC
+            
             cell.labelCustomized.text = college.label
+            cell.labelCustomized.textAlignment = .Center
+            cell.labelCustomized.font = UIFont (name: "Hiragino Sans", size: 25)
+            cell.labelCustomized.textColor = UIColor.whiteColor()
             cell.descCustomized.text = college.desc
+            cell.descCustomized.textAlignment = .Center
+            cell.descCustomized.font = UIFont (name: "Hiragino Sans", size: 12)
+            cell.descCustomized.textColor = UIColor.whiteColor()
+            
+            if indexPath.row == 0 {
+                let backgroundImage3 = UIImage(named: "edu3.png")
+                let imageView3 = UIImageView(image: backgroundImage3)
+                cell.backgroundView = imageView3
+                imageView3.contentMode = .ScaleAspectFill
+            }
+            else {
+                let backgroundImage4 = UIImage(named: "edu4.png")
+                let imageView4 = UIImageView(image: backgroundImage4)
+                cell.backgroundView = imageView4
+                imageView4.contentMode = .ScaleAspectFill
         }
+        }
+        
         return cell
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -52,6 +87,12 @@ class Education: UITableViewController {
     
     override func viewDidLoad() {
         print("hi")
+        let backgroundImage = UIImage(named: "backgroundedu.png")
+        let imageView = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = imageView
+        imageView.contentMode = .ScaleAspectFill
+        
         super.viewDidLoad()
     }
+
 }

@@ -25,6 +25,7 @@ class Profile: UITableViewController {
             singleTap.numberOfTouchesRequired = 1
             cell.desc.addGestureRecognizer(singleTap)
             cell.desc.userInteractionEnabled = true
+            
             return cell
         }
         else {
@@ -32,9 +33,7 @@ class Profile: UITableViewController {
             cell.textLabel!.text = contact[indexPath.row]
             cell.detailTextLabel!.text = detail[indexPath.row]
             // mark hyperlink
-			if contact[indexPath.row] == "Website" {
-				cell.detailTextLabel!.textColor = UIColor.blueColor()
-			}
+			
 			return cell
         }
         
@@ -59,4 +58,15 @@ class Profile: UITableViewController {
 			UIApplication.sharedApplication().openURL( url! )
 		}
 	}
+    override func viewDidLoad() {
+        
+        let backgroundImage = UIImage(named: "backgroundprofile.png")
+        let imageView = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = imageView
+        imageView.contentMode = .ScaleAspectFill
+     
+        super.viewDidLoad() 
+    }
+    
+   
 }

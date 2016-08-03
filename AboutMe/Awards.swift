@@ -22,7 +22,20 @@ class Awards: UITableViewController {
         let award = awardCell.award[indexPath.row]
         cell.labelAward.text = award.label
         cell.descAward.text = award.desc
+        cell.descAward.textAlignment = .Center
+        cell.descAward.textColor = UIColor.whiteColor()
         cell.yearAward.text = award.year
         return cell
     }
+    override func viewDidLoad() {
+        print("hi")
+        let backgroundImage = UIImage(named: "backgroundaward.png")
+        let imageView = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = imageView
+        imageView.contentMode = .ScaleAspectFill
+        
+        super.viewDidLoad()
+    }
+
+
 }

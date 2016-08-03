@@ -49,7 +49,7 @@ class Experience: UITableViewController {
             }
         }
         
-        
+        expcell.descExp.textAlignment = .Center
     
         return expcell
     }
@@ -57,6 +57,11 @@ class Experience: UITableViewController {
     
     override func viewDidLoad() {
         print("hi")
+        let backgroundImage = UIImage(named: "backgroundexp.png")
+        let imageView = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = imageView
+        imageView.contentMode = .ScaleAspectFill
+        
         super.viewDidLoad()
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class EduViewCell: UITableViewCell {
     
-    @IBOutlet weak var imageCustomized: UIImageView!
+    
     @IBOutlet weak var labelCustomized: UILabel!
     @IBOutlet weak var descCustomized: UITextView!
    
