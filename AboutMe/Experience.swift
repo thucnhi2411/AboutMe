@@ -26,7 +26,7 @@ class Experience: UITableViewController {
         }
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var expcell = tableView.dequeueReusableCellWithIdentifier("Category", forIndexPath: indexPath) as! ExpViewCell
+        let expcell = tableView.dequeueReusableCellWithIdentifier("Category", forIndexPath: indexPath) as! ExpViewCell
        
      
                 if indexPath.section == 0 {

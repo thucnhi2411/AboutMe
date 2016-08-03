@@ -33,7 +33,7 @@ class Skills: UITableViewController {
         }
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("skill", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("skill", forIndexPath: indexPath)
         switch (indexPath.section) {
         case 0:
             cell.textLabel!.text = social[indexPath.row]

@@ -22,7 +22,7 @@ class Education: UITableViewController {
         return 2
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("EduViewCell", forIndexPath: indexPath) as! EduViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("EduViewCell", forIndexPath: indexPath) as! EduViewCell
         let highschool = eduCell.highschool[indexPath.row]
         let college = eduCell.college[indexPath.row]
         
@@ -31,6 +31,10 @@ class Education: UITableViewController {
             cell.imageCustomized.image = imageHS
             cell.labelCustomized.text = highschool.label
             cell.descCustomized.text = highschool.desc
+			
+			if indexPath.row == 1 {
+				cell.accessoryType = UITableViewCellAccessoryType.DetailButton
+			}
         }
         else {
             let imageC = UIImage(named: college.imageName)

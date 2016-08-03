@@ -18,15 +18,16 @@ class ProfileCell: UITableViewCell {
        
     func myUITextViewTapped(recognizer: UITapGestureRecognizer) {
         if(recognizer.state == UIGestureRecognizerState.Ended){
-            print("myUITextView has been tapped by the user.")
             if i < arr.count {
                 desc.text = arr[i]
                 i = i + 1
             }
-            
-            
+			desc.alpha = 0
+			UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations:{ self.desc.alpha = 1
+			},completion: nil)
+
         }
-    }
+	}
     
 
 }

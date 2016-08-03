@@ -18,7 +18,7 @@ class Awards: UITableViewController {
         return 5
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("awardcell", forIndexPath: indexPath) as! AwardsViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("awardcell", forIndexPath: indexPath) as! AwardsViewCell
         let award = awardCell.award[indexPath.row]
         cell.labelAward.text = award.label
         cell.descAward.text = award.desc
