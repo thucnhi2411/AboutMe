@@ -22,7 +22,7 @@ class EduCell {
     
     let highschool = [
         AddInfo(label : "GPA", desc: "9.1/10"),
-        AddInfo(label : "Awards", desc: "Click for details!")
+        AddInfo(label : "Awards", desc: "Tap for details!")
     ]
      let college = [
        AddInfo(label : "Major", desc: "B.S. in Computer Science \nB.A. in Economics"),
