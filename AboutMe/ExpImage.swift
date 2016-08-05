@@ -33,7 +33,7 @@ class ExpImage: UIViewController {
     ]
     override func viewDidLoad() {
         imageGallery.image = gallery[0]
-        
+        caption.text = expCaption[0]
         let right = UISwipeGestureRecognizer(target: self, action: #selector(self.rightSwiped(_:)) )
         right.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(right)
@@ -50,7 +50,7 @@ class ExpImage: UIViewController {
         if i < gallery.count && i > 0 {
             i = i - 1
             imageGallery.image = gallery[i]
-            
+            caption.text = expCaption[i]
         }
         
         
@@ -64,7 +64,7 @@ class ExpImage: UIViewController {
         if i < a {
             i = i + 1
             imageGallery.image = gallery[i]
-            
+            caption.text = expCaption[i]
             
         }
         
