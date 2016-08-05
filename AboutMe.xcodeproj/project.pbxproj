@@ -11,6 +11,7 @@
 		0414B5411D4F0F880060C348 /* ExpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414B5401D4F0F880060C348 /* ExpCell.swift */; };
 		0414B5431D4F14C90060C348 /* ExpViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414B5421D4F14C90060C348 /* ExpViewCell.swift */; };
 		0456603E1D4FA24C00E78AD3 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456603D1D4FA24C00E78AD3 /* ProfileCell.swift */; };
+		045A14EF1D54270A007FFED4 /* ExpImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A14EE1D54270A007FFED4 /* ExpImage.swift */; };
 		046736D41D449CFF00710E12 /* EduCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046736D31D449CFF00710E12 /* EduCell.swift */; };
 		046736D61D449EE400710E12 /* EduViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046736D51D449EE400710E12 /* EduViewCell.swift */; };
 		046736D81D44A0A900710E12 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046736D71D44A0A900710E12 /* Education.swift */; };
@@ -50,6 +51,7 @@
 		0414B5401D4F0F880060C348 /* ExpCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpCell.swift; sourceTree = "<group>"; };
 		0414B5421D4F14C90060C348 /* ExpViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpViewCell.swift; sourceTree = "<group>"; };
 		0456603D1D4FA24C00E78AD3 /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		045A14EE1D54270A007FFED4 /* ExpImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpImage.swift; sourceTree = "<group>"; };
 		046736D31D449CFF00710E12 /* EduCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EduCell.swift; sourceTree = "<group>"; };
 		046736D51D449EE400710E12 /* EduViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EduViewCell.swift; sourceTree = "<group>"; };
 		046736D71D44A0A900710E12 /* Education.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				04F5E2BC1D41DDD400AA6066 /* AppDelegate.swift */,
 				04F5E2C21D41DDD400AA6066 /* Main.storyboard */,
+				045A14EE1D54270A007FFED4 /* ExpImage.swift */,
 				0456603D1D4FA24C00E78AD3 /* ProfileCell.swift */,
 				04B27B4C1D4F4F8B005C2AEE /* Skills.swift */,
 				0414B53E1D4EF58D0060C348 /* text.swift */,
@@ -307,6 +310,7 @@
 				0414B53F1D4EF58E0060C348 /* text.swift in Sources */,
 				04D55EE51D45C4350032341D /* AwardsCell.swift in Sources */,
 				0456603E1D4FA24C00E78AD3 /* ProfileCell.swift in Sources */,
+				045A14EF1D54270A007FFED4 /* ExpImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

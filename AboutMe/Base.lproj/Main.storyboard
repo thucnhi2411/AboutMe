@@ -437,11 +437,58 @@
                             <outlet property="delegate" destination="2Jr-pQ-vjw" id="qka-Av-UKx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Experience" id="Fht-sV-mnF"/>
+                    <navigationItem key="navigationItem" title="Experience" id="Fht-sV-mnF">
+                        <barButtonItem key="rightBarButtonItem" title="Images" id="8c1-Tz-emA">
+                            <connections>
+                                <segue destination="0XV-TN-cBb" kind="show" id="Nhs-13-iKz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4K-R4-XXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="976" y="26"/>
+        </scene>
+        <!--Image-->
+        <scene sceneID="VLS-i6-JFx">
+            <objects>
+                <viewController title="Image" id="0XV-TN-cBb" customClass="ExpImage" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ds6-Cb-1sk"/>
+                        <viewControllerLayoutGuide type="bottom" id="dmy-bq-ymf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="niV-uO-7Bj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zub-5e-YOc">
+                                <rect key="frame" x="20" y="72" width="560" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Caption" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sr-4U-d6A">
+                                <rect key="frame" x="20" y="208" width="560" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="8sr-4U-d6A" secondAttribute="leading" id="8TU-Ky-ULd"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Zub-5e-YOc" secondAttribute="leading" id="Pak-33-dhn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8sr-4U-d6A" secondAttribute="trailing" id="UOj-e1-xEn"/>
+                            <constraint firstItem="8sr-4U-d6A" firstAttribute="top" secondItem="Zub-5e-YOc" secondAttribute="bottom" constant="8" id="ZXV-4x-cUD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zub-5e-YOc" secondAttribute="trailing" id="sOl-8P-sZM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Experience Image" id="vFz-Wh-nz8"/>
+                    <connections>
+                        <outlet property="caption" destination="8sr-4U-d6A" id="rdD-ce-15v"/>
+                        <outlet property="imageGallery" destination="Zub-5e-YOc" id="J3N-J8-5Bh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAF-PX-wy8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="26"/>
         </scene>
         <!--Education-->
         <scene sceneID="vEJ-dh-xTK">
